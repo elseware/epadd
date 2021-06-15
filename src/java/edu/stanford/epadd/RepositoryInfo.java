@@ -3,6 +3,7 @@ package edu.stanford.epadd;
 /*
 Class to capture institution specific information that needs to be displayed to the user in public-discovery mode.
  */
+@EqualsAndHashCode
 public class RepositoryInfo {
     public String institutionName;
     public String repositoryName;

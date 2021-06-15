@@ -45,16 +45,18 @@
           <version>7.4.0</version>
       </dependency>-->
 
-
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jsp-api</artifactId>
       <version>2.0</version>
     </dependency>
       <!-- https://mvnrepository.com/artifact/it.unibo.alice.tuprolog/tuprolog -->
-
-
-
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.20</version>
+          <scope>provided</scope>
+      </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
@@ -77,7 +79,7 @@
       <artifactId>commons-fileupload</artifactId>
       <version>1.3.3</version>
     </dependency>
-   <!-- <dependency>
+    <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.16</version>
@@ -87,7 +89,28 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.5</version>
-    </dependency>-->
+    </dependency>
+      <dependency>
+          <groupId>edu.stanford.ejalbert</groupId>
+          <artifactId>BrowserLauncher2</artifactId>
+          <version>1.3</version>
+      </dependency>
+      <dependency>
+          <groupId>org.mortbay.jetty</groupId>
+          <artifactId>jetty</artifactId>
+          <version>6.1.5</version>
+      </dependency>
+      <dependency>
+          <groupId>gov.loc</groupId>
+          <artifactId>bagit</artifactId>
+          <version>5.1.1</version>
+      </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.11</version>
+          <scope>test</scope>
+      </dependency>
       <dependency>
           <groupId>org.apache.logging.log4j</groupId>
           <artifactId>log4j-api</artifactId>
@@ -258,7 +281,7 @@
             <artifactId>maven-install-plugin</artifactId>
             <version>2.5.2</version>
             <executions>
-                <execution>
+                <!-- <execution>
                 <id>install-external-bagit</id>
                 <phase>clean</phase>
                 <configuration>
@@ -275,7 +298,7 @@
                 </goals>
             </execution>
 
-<!-- <execution>
+<execution>
                     <id>install-external-mstor</id>
                     <phase>clean</phase>
                     <configuration>
